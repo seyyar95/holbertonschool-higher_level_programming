@@ -13,10 +13,6 @@ This repository explores the implementation of various data structures in Python
 
 4. Reduce: Applies a function cumulatively to the items of an iterable, often used for aggregation.
 
-## Usage
-
-Clone this repository: git clone https://github.com/seyyar95/python-more_data_structures.git
-
 
 ## Contact Information
 
@@ -25,5 +21,6 @@ For any questions or feedback, reach out to Sayyar at heydrovsyyar@gmail.com.
 ## Additional Resources
 
 Python Data Structures and Algorithms: https://www.tutorialspoint.com/python_data_structure/index.htm
+
 Problem Solving with Algorithms and Data Structures using Python: https://runestone.academy/ns/books/published/pythonds3/index.html
 
