@@ -8,6 +8,6 @@ def number_keys(a_dictionary):
         x = x + 1
     return x
 
-    but there's an easy way 
+    but there's an easy way
     '''
     return len(a_dictionary)
