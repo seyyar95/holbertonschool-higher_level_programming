@@ -5,10 +5,13 @@ This repository explores the implementation of various data structures in Python
 
 ## Brief Introduction to Functional Programming Tools
 
-Lambda Functions: Anonymous functions defined using the lambda keyword, useful for concise operations.
-Map: Applies a function to each item in an iterable and returns an iterator of the results.
-Filter: Creates an iterator of elements from an iterable for which a function returns True.
-Reduce: Applies a function cumulatively to the items of an iterable, often used for aggregation.
+1. Lambda Functions: Anonymous functions defined using the lambda keyword, useful for concise operations.
+
+2. Map: Applies a function to each item in an iterable and returns an iterator of the results.
+
+3. Filter: Creates an iterator of elements from an iterable for which a function returns True.
+
+4. Reduce: Applies a function cumulatively to the items of an iterable, often used for aggregation.
 
 ## Usage
 
