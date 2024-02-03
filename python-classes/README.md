@@ -8,11 +8,6 @@ Classes are blueprints for creating objects that encapsulate data (attributes) a
 They provide a way to model real-world entities and organize code in a structured, reusable manner.
 ## Key Concepts
 
-Creating a Class:
-
-class ClassName:
-*Class body*
-
 Attributes:
 
   *Data associated with a class and its instances.
