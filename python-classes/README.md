@@ -10,49 +10,52 @@ They provide a way to model real-world entities and organize code in a structure
 
 Creating a Class:
 
-Python
 class ClassName:
-    # Class body
+ # Class body
 
 Attributes:
 
-Data associated with a class and its instances.
+  *Data associated with a class and its instances.
 
-Defined within the __init__() method (constructor).
+  *Defined within the __init__() method (constructor).
 
-Accessed using dot notation: object.attribute
+Accessed using dot notation: 
+  
+  *object.attribute
 
 Methods:
 
-Functions defined within a class that operate on its data.
+  *Functions defined within a class that operate on its data.
 
-Also invoked using dot notation: object.method()
+  *Also invoked using dot notation: object.method()
 
 Instances:
 
-Individual objects created from a class.
+  *Individual objects created from a class.
 
-Each instance has its own unique set of attribute values.
+  *Each instance has its own unique set of attribute values.
 ## Basic Example:
 
-Python
 class Dog:
-    def __init__(self, name, breed):
-        self.name = name
-        self.breed = breed
-
-    def bark(self):
-        print("Woof!")
+	def __init__(self, name, breed):
+		self.name = name
+        	self.breed = breed
+	def bark(self):
+        	print("Woof!")
 ## Usage:
 
-Python
-my_dog = Dog("Fido", "Labrador")
-print(my_dog.name)  # Output: Fido
-my_dog.bark()      # Output: Woof!
+>>>
+>>> my_dog = Dog("Fido", "Labrador")
+>>>
+>>> print(my_dog.name)  # Output: Fido
+
+>>> my_dog.bark()      # Output: Woof!
 ## Additional Features
 
 Inheritance: Classes can inherit attributes and methods from other classes.
+
 Special Methods: Built-in methods like __str__() and __repr__() for string representation.
+
 Class Attributes: Attributes shared by all instances of a class.
 ## Resources
 
