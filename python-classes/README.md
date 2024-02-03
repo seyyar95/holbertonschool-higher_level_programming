@@ -11,7 +11,7 @@ They provide a way to model real-world entities and organize code in a structure
 Creating a Class:
 
 class ClassName:
- # Class body
+  Class body
 
 Attributes:
 
@@ -37,11 +37,14 @@ Instances:
 ## Basic Example:
 
 class Dog:
-	def __init__(self, name, breed):
-		self.name = name
-        	self.breed = breed
-	def bark(self):
-        	print("Woof!")
+    def __init__(self, name, breed):
+        self.name = name
+        self.breed = breed
+
+    def bark(self):
+        print("Woof!")
+
+
 ## Usage:
 
 >>>
