@@ -29,7 +29,12 @@ Traceback (most recent call last):
         ...
 TypeError: b must be an integer
 
->>> add_integer(3, float('print'))
+>>> add_integer(float('inf'), 0)
 Traceback (most recent call last):
     ...
-ValueError: cannot convert float print to integer
+OverflowError: cannot convert float infinity to integer
+
+>>> add_integer(0, float('nan'))
+Traceback (most recent call last):
+    ...
+ValueError: cannot convert float NaN to integer
