@@ -32,4 +32,4 @@ TypeError: b must be an integer
 >>> add_integer(3, float('print'))
 Traceback (most recent call last):
     ...
-ValueError: cannot convert float NaN to integer
+ValueError: cannot convert float print to integer
