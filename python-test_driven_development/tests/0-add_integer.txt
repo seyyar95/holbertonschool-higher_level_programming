@@ -1,0 +1,35 @@
+=====================================
+ The  ``0. Integers addition`` module
+=====================================
+
+Usage
+=====
+
+>>> add_integer = __import__('0-add_integer').add_integer
+
+>>> add_integer(3, 2)
+5
+
+>>> add_integer(2)
+100
+
+>>> add_integer(2.5, 7)
+9
+
+>>> add_integer(10, -1)
+9
+
+>>> add_integer("Messi", 10)
+Traceback (most recent call last):
+	...
+TypeError: a must be an integer
+
+>>> add_integer(3, "Fuhrer")
+Traceback (most recent call last):
+        ...
+TypeError: b must be an integer
+
+>>> add_integer(3, float('print'))
+Traceback (most recent call last):
+    ...
+ValueError: cannot convert float NaN to integer
