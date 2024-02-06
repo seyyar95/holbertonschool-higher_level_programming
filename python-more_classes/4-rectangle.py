@@ -60,7 +60,9 @@ class Rectangle:
             row = "#" * self.__width
             rows.append(row)
         return "\n".join(rows)
+
     def __repr__(self):
         """returns a string representation of the rectangle to be able
         to recreate a new instance by using eval()"""
+
         return f"Rectangle({self.__width}, {self.__height})"
