@@ -27,6 +27,10 @@ True
 >>> my_list.print_sorted()
 []
 
+>>> my_list = MyList([-9, -12, 1])
+>>> my_list.print_sorted()
+[-12, -9, 1]
+
 
 >>> type(MyList.__dict__['print_sorted'])
 <class 'function'>
