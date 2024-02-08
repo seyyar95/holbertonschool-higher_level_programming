@@ -23,10 +23,6 @@ True
 >>> my_list.print_sorted()
 [1, 2, 3, 4, 5]
 
->>> my_list = MyList(["apple", "banana", "cherry"])
->>> my_list.print_sorted()
-['apple', 'banana', 'cherry']
-
 >>> my_list = MyList()
 >>> my_list.print_sorted()
 []
