@@ -1,4 +1,4 @@
-#!/usr/bin/paython3
+#!/usr/bin/python3
 """Doc for Module"""
 
 
