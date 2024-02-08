@@ -27,5 +27,10 @@ True
 >>> my_list.print_sorted()
 ['apple', 'banana', 'cherry']
 
+>>> my_list = MyList()
+>>> my_list.print_sorted()
+[]
+
+
 >>> type(MyList.__dict__['print_sorted'])
 <class 'function'>
