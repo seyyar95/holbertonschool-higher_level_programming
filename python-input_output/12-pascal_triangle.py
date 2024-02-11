@@ -21,8 +21,6 @@ def pascal_triangle(n):
                     row.append(1)
                 elif j == i:
                     row.append(1)
-                elif i == 2:
-                    row.append(j + row[j - 1])
                 else:
                     row.append(new_list[i-1][j-1] + new_list[i-1][j])
             new_list.append(row)
