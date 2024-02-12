@@ -84,6 +84,7 @@ class Rectangle(Base):
 
 
    def update(self, *args):
+       """doc of update"""
         a = 0
         for arg in args:
             if a == 0:    
