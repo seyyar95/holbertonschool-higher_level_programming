@@ -112,6 +112,7 @@ class Rectangle(Base):
                     self.y = value
 
     def to_dictionary(self):
+        """Rectangle dictionary"""
         dictionary = {
                 "id": self.id,
                 "width": self.width,
