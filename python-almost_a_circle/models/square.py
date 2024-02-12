@@ -20,3 +20,28 @@ class Square(Rectangle):
     def __str__(self):
         name = __class__.__name__
         return f"[{name}] ({self.id}) {self.x}/{self.y} - {self.size}"
+
+    def update(self, *args, **kwargs):
+        """doc of update"""
+        if args and len(args) != 0:
+            a = 0
+            for arg in args:
+                if a == 0:
+                    self.id = arg
+                elif a == 1:
+                    self.size = arg
+                elif a == 2:
+                    self.x = arg
+                elif a == 3:
+                    self.y = arg
+                a += 1
+        elif kwargs and len(kwargs) != 0:
+            for key, value in kwargs.items():
+                if key == "size":
+                    self.size = value
+                elif key == "id":
+                    self.id = value
+                elif key == "x":
+                    self.x = value
+                elif key == "y":
+                    self.y = value
