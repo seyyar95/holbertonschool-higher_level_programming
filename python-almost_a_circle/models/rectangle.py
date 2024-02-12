@@ -74,6 +74,7 @@ class Rectangle(Base):
             print("#" * self.__width)
 
     def __str__(self):
+        """__str__ method"""
         name = __class__.__name__
         x = self.__x
         y = self.__y
