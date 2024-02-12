@@ -82,7 +82,7 @@ class Rectangle(Base):
         y = self.__y
         return f"[{name}] ({self.id}) {x}/{y} - {self.__width}/{self.__height}"
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """doc of update"""
         if args and len(args) != 0:
             a = 0
