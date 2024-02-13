@@ -13,8 +13,3 @@ class BaseTest(unittest.TestCase):
 
         base2 = Base(None)
         self.assertEqual(base1.id, 2)
-
-
-
-if __name__ == "__main__":
-    unittest.main()
