@@ -11,5 +11,5 @@ class BaseTest(unittest.TestCase):
         base1 = Base()
         self.assertEqual(base1.id, 1)
 
-        base2 = Base(None)
+        base1 = Base(None)
         self.assertEqual(base1.id, 2)
