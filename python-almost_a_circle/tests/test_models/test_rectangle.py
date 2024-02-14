@@ -22,7 +22,7 @@ class TestRectangle(unittest.TestCase):
         self.assertEqual(self.r.area(), 2)
 
     def test_to_dictionary(self):
-        dictionary = {"width": 1, "height": 2, "x": 3, "y": 4, "id": 5)
+        dictionary = {"width": 1, "height": 2, "x": 3, "y": 4, "id": 5}
         self.assertEqual(self.r.to_dictionary(), dictionary)
 
     def test_update(self):
