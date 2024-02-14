@@ -4,7 +4,7 @@
 
 
 import unittest
-from models.base import Base
+from models.rectangle import Rectangle
 
 
 class TestRectangle(unittest.TestCase):
@@ -27,8 +27,8 @@ class TestRectangle(unittest.TestCase):
 
     def test_update(self):
         self.r.update(10, 20, 30, 40, 50)
-        self.assertEqual(self.r.width, 10)
-        self.assertEqual(self.r.height, 20)
-        self.assertEqual(self.r.x, 30)
-        self.assertEqual(self.r.y, 40)
-        self.assertEqual(self.r.id, 50)
+        self.assertEqual(self.r.width, 20)
+        self.assertEqual(self.r.height, 30)
+        self.assertEqual(self.r.x, 40)
+        self.assertEqual(self.r.y, 50)
+        self.assertEqual(self.r.id, 10)
