@@ -5,6 +5,7 @@
 import unittest
 from models.base import Base
 
+
 class BaseTest(unittest.TestCase):
     def test_id_checker(self):
         # None case
@@ -29,14 +30,12 @@ class BaseTest(unittest.TestCase):
         self.assertEqual(b3.id, -6)
 
         # String case
-        b4  = Base("Saul Goodman was here.")
+        b4 = Base("Saul Goodman was here.")
         self.assertEqual(b4.id, "Saul Goodman was here.")
 
         b4 = Base("If you don't like Kanye, I don't like you.")
         self.assertEqual(b4.id, "If you don't like Kanye, I don't like you.")
 
 
-
 if __name__ == "__main__":
     unittest.main()
-
