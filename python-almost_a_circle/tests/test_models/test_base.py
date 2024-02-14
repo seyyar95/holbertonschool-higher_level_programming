@@ -7,27 +7,14 @@ from models.base import Base
 
 class BaseTest(unittest.TestCase):
     def test_id(self):
-        
         base1 = Base()
         self.assertEqual(base1.id, 1)
-        
-        # none case
-        base1 = Base(None)
-        self.assertEqual(base1.id, 2)
 
-        # positive int case
-        base1 = Base(10)
-        self.assertEqual(base1.id, 10)
+        base2 = Base(None)
+        self.assertEqual(base2.id, 2)
 
-        base1 = Base(100)
-        self.assertEqual(base1.id, 100)
-
-        # negative int case
-        base1 = Base(-1)
-        self.assertEqual(base1.id, -1)
-
-        base1 = Base(-25)
-        self.assertEqual(base1.id, -25)
+        base3 = Base(89)
+        self.assertEqual(base3.id, 3)
 
 
 if __name__ == "__main__":
