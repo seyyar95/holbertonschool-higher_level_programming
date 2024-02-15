@@ -32,3 +32,11 @@ class TestRectangle(unittest.TestCase):
         self.assertEqual(self.r.x, 40)
         self.assertEqual(self.r.y, 50)
         self.assertEqual(self.r.id, 10)
+
+    def test_typeErrors(self):
+        with self.assertRaises(TypeError):
+            Rectangle()
+        with self.assertRaises(TypeError):
+            Rectangle(1)
+        with self.assertRaises(TypeError):
+            Rectangle(1, 2)
