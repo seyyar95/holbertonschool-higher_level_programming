@@ -5,6 +5,8 @@
 
 import unittest
 from models.rectangle import Rectangle
+from io import StringIO
+from unittest.mock import patch
 
 
 class TestRectangle(unittest.TestCase):
@@ -46,3 +48,28 @@ class TestRectangle(unittest.TestCase):
             Rectangle(5, 7, "4")
         with self.assertRaises(TypeError):
             Rectangle(5, 7, 4, "3")
+
+    def test_valueErrors(self):
+        with self.assertRaises(ValueError):
+            Rectangle(-1, 2)
+        with self.assertRaises(ValueError):
+            Rectangle(1, -2)
+        with self.assertRaises(ValueError):
+            Rectangle(0, 2)
+        with self.assertRaises(ValueError):
+            Rectangle(1, 0)
+        with self.assertRaises(ValueError):
+            Rectangle(1, 2, -3)
+        with self.assertRaises(ValueError):
+            Rectangle(1, 2, 3, -4)
+
+    def test_str(self):
+        self.assertEqual(str(self.r), "[Rectangle] (5) 3/4 - 1/2")
+
+    def test_display(self):
+        # without x and y exists
+        r = Rectangle(3, 3, 0, 0)
+        output = "###\n###\n###\n"
+        with patch("sys.stdout", new=StringIO()) as out:
+            r.display()
+            self.assertEqual(out.getvalue(), output)
