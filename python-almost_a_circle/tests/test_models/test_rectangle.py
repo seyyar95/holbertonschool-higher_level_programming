@@ -20,6 +20,25 @@ class TestRectangle(unittest.TestCase):
         self.assertEqual(self.r.y, 4)
         self.assertEqual(self.r.id, 5)
 
+    def test_attributes_2(self):
+        # without x y
+        r1 = Rectangle(1, 2)
+        self.assertEqual(r1.width, 1)
+        self.assertEqual(r1.height, 2)
+
+        # without y
+        r1 = Rectangle(1, 2, 3)
+        self.assertEqual(r1.width, 1)
+        self.assertEqual(r1.height, 2)
+        self.assertEqual(r1.x, 3)
+
+        # all attributes
+        r1 = Rectangle(1, 2, 3, 4)
+        self.assertEqual(r1.width, 1)
+        self.assertEqual(r1.height, 2)
+        self.assertEqual(r1.x, 3)
+        self.assertEqual(r1.y, 4)
+
     def test_area(self):
         self.assertEqual(self.r.area(), 2)
 
@@ -72,4 +91,10 @@ class TestRectangle(unittest.TestCase):
         output = "###\n###\n###\n"
         with patch("sys.stdout", new=StringIO()) as out:
             r.display()
+            self.assertEqual(out.getvalue(), output)
+
+    def test_display_2(self):
+        output = "\n\n\n\n   #\n   #\n"
+        with patch("sys.stdout", new=StringIO()) as out:
+            self.r.display()
             self.assertEqual(out.getvalue(), output)
