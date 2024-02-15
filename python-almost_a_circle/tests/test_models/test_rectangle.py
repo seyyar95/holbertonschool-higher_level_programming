@@ -17,7 +17,7 @@ class TestRectangle(unittest.TestCase):
         self.assertEqual(self.r.x, 3)
         self.assertEqual(self.r.y, 4)
         self.assertEqual(self.r.id, 5)
- 
+
     def test_area(self):
         self.assertEqual(self.r.area(), 2)
 
@@ -39,4 +39,10 @@ class TestRectangle(unittest.TestCase):
         with self.assertRaises(TypeError):
             Rectangle(1)
         with self.assertRaises(TypeError):
-            Rectangle(1, 2)
+            Rectangle("5", 7)
+        with self.assertRaises(TypeError):
+            Rectangle(5, "7")
+        with self.assertRaises(TypeError):
+            Rectangle(5, 7, "4")
+        with self.assertRaises(TypeError):
+            Rectangle(5, 7, 4, "3")
