@@ -136,27 +136,3 @@ query, create, edit, and delete tables in MySQL.
   class `City` that inherits from SQLAlchemy `Base` and links to the MySQL table
   `cities`.
     * Identical to the `City` class defined in [model_city.py](./model_city.py).
-  * [100-relationship_states_cities.py](./100-relationship_states_cities.py):
-  Python script that uses SQLAlchemy to add the `State` "California" with `City`
-  "San Francisco" to the database `hbtn_0e_100_usa`.
-  * Usage: `./100-relationship_states_cities.py <mysql username>
-  <mysql password> <database name>`.
-  * Uses the `cities` relationship for all `State` objects.
-
-* **16. List relationship**
-  * [101-relationship_states_cities_list.py](./101-relationship_states_cities_list.py):
-  Python script that uses SQLAlchemy to list all `State` and corresponding
-  `City` objects in the database `hbtn_0e_101_usa`.
-  * Usage: `./101-relationship_states_cities_list.py <mysql username>
-  <mysql password> <database name>`.
-  * Uses the `cities` relationship for all `State` objects.
-  * Results are sorted by ascending `states.id` and `cities.id`.
-
-* **17. List city**
-  * [102-relationship_cities_states_list.py](./102-relationship_cities_states_list.py):
-  Python script that uses SQLAlchemy to list all `City` objects from the database
-  `hbtn_0e_101_usa`.
-  * Usage: `./102-relationship_cities_states_list.py <mysql username>
-  <mysql password> <database name>`.
-  * Uses the `state` relationship to access the `State` objects linked to `City` objects.
-  * Results are sorted by ascending `cities.id`.
