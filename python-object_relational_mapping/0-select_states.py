@@ -13,7 +13,7 @@ def connect_to_database():
             passwd=sys.argv[2],
             db=sys.argv[3],
             port=3306,
-            charset='utf8'  # Specify the character set if needed
+            charset='utf8'
         )
         return db
     except MySQLdb.Error as e:
@@ -25,7 +25,7 @@ def fetch_and_print_data(db):
     """Fetches data from the 'states' table and prints it."""
     try:
         with db.cursor() as cur:
-            cur.execute("SELECT * FROM states")
+            cur.execute("SELECT * FROM states ORDER BY id ASC")
             rows = cur.fetchall()
             for row in rows:
                 print(row)
