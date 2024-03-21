@@ -20,6 +20,7 @@ def connect_to_database():
         print(f"Error {e.args[0]}: {e.args[1]}")
         sys.exit(1)
 
+
 def fetch_and_print_data(db):
     """Fetches data from the 'states' table and prints it."""
     try:
@@ -31,6 +32,7 @@ def fetch_and_print_data(db):
     except MySQLdb.Error as e:
         print(f"Error {e.args[0]}: {e.args[1]}")
 
+
 def main():
     """Main function to execute the script."""
     if len(sys.argv) != 4:
@@ -40,6 +42,7 @@ def main():
     db = connect_to_database()
     fetch_and_print_data(db)
     db.close()
+
 
 if __name__ == "__main__":
     main()
