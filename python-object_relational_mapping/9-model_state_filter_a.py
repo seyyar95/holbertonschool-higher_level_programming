@@ -17,9 +17,7 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=engine)
     session = Session()
     try:
-        query = session.query(State).filter(State.name.like("%a%"))\
-                .order_by(State.id)
-        for instance in query:
+        for instance in session.query(State).filter(State.name.contains("a")):
             print(instance.id, instance.name, sep=": ")
     except Exception as e:
-        print(e[0])
+        print(e.args[0])
