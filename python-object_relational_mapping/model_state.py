@@ -14,5 +14,11 @@ class State(Base):
     Class that defines each State
     """
     __tablename__ = 'states'
-    id = Column(Integer, autoincrement=True, unique=True, nullable=False, primary_key=True)
+    id = Column(
+            Integer,
+            autoincrement=True,
+            unique=True,
+            nullable=False,
+            primary_key=True
+            )
     name = Column(String(128), nullable=False)
